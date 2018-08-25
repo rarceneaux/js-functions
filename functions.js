@@ -22,7 +22,6 @@ console.log('bear:', nuggetizer('bear'));
 
 nuggetizer('fish');
 
-
 // function ex 2 see notes
 
 const bearSticks = nuggetizer('bear');
@@ -31,3 +30,23 @@ return `${name} devoured ${food}`
 };
 
 console.log('nomnomOutput:', nomnom('Raymond', bearSticks));
+
+// / ex 3
+
+const numberAdder =(num)=>{
+    const finalNumber = num +3;
+    printToDom(`<h2>${finalNumber}</h2>`,'allTheNumbers')
+};
+
+
+// ex 4
+
+const printToDom =(stringToPrint,divId) =>{
+const selectedDiv =document.getElementById(divId);
+selectedDiv.innerHTML += stringToPrint;
+}
+numberAdder(22);
+numberAdder(30);
+
+
+printToDom =('I am ready for lunch','feelings');
